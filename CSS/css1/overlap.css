@@ -1,0 +1,7 @@
+.mylink{
+    background-color: darkkhaki;
+}
+.mylink :hover{
+    background-color: darkred;
+
+}

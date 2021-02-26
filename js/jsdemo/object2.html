@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let person={name:"arya" ,age:"24",address:"sdfghh"}
+    let student=Object.create(person)
+    console.log(student)
+    student.rollno ="1" //adding a new elemt or
+//student ["roll no"] =1
+//student.name="ram "// here ram is in student but arya is in its prototype
+//student.__proto__.name="raj" //changing the name in prototype also
+//console.log( student)
+//console.log(student.name)
+
+//object.freeze(student)//blocking adding or removing an object
+//console.log(object.isFrozen(student))// to check the object is freeze or not
+//student.batch=12 //does not change the value
+Object.seal(student)
+student.batch="cse"
+student.rollno="12"
+console.log(student)
+console.log(Object.isSealed(student))
+var x=300
+
+   </script> 
+</body>
+</html>

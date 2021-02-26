@@ -1,0 +1,14 @@
+
+.demo{
+    background-color: red;
+    width: 50%;
+    height: 100px;
+}
+#p1{
+    color: blueviolet;
+}
+h1{
+    color: crimson;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}

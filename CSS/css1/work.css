@@ -1,0 +1,9 @@
+.a{
+    border-collapse:collapse  ;
+    background-color: darkblue;
+}
+.a:hover{
+
+background-color: chartreuse;
+
+}

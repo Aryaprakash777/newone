@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="data" name="" id="data">
+    <button onclick="check()">click me</button>
+    <script>
+                                                                                                                                                                        
+           // let regex=/\d/g // g is used for global search
+           // let regex=/\d{5}/
+           //let regex=/^[a-z]{3}\d{2}$/
+          // let regex=/^(987)\d{7}$/g
+           //let regex=/^(987|789)\d{7}$/g
+          // let regex=/^\+91\s(987|789)\d{7}$/g //s for space
+         // let regex=/^_-]+[a-zA-Z0-9.@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/g
+         //let regex=/^\w+\W*@(gmail.com|yahoo.in)$/g
+         var input="my phone number is 9876543210 and office number"+"is (0484)-2245561"+"and fax number is 0497-2484477"
+         let regex=/^[a-zA-Z0-9.-"()]$/g
+
+
+           // let data=document.getElementById('data').value
+             alert(data.match(regex))
+             if (regex.test(data)){
+                 alert("valid mail id")
+             }
+             else{
+                 alert("invalid email")
+             }
+        }
+    </script>
+    <script src="meta.js"></script>
+</body>
+</html>

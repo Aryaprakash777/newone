@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="create()" style="color: blue;">Add</button>
+    <div id="mydiv">
+
+    </div>
+    <ul id="mylist"></ul>
+
+    <script>
+        function create(){
+          let para=document.createElement("p")
+          para.innerText="HYPER TEXT MARKUP LANG"
+          document.getElementById('mydiv').appendChild(para)
+        }
+       let arr=["a","b","c","d","e"]
+     //  for(x of arr){
+     //      let li=document.createElement("li")
+      //     li.innerText=x
+      //     document.getElementById("mylist").appendChild(li)
+
+       //}
+       let s=""
+       for(x of arr){
+           s+=`<li>${x}</li>`
+
+       }
+       document.getElementById("mylist").innerHTML=s
+    </script>
+
+    
+    
+
+</body>
+</html>
